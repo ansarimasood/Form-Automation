@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <title>Contact Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:#00afbf;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #00afbf;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: white;
+    color: #00afbf;
+}
+    .body{border-style: solid;
+        border-width: 7px;
+        border-color: #00afbf;
+            margin-left: 75px;
+            margin-right: 75px;
+        color: #00afbf;}
+    h1{text-align: center;
+        color:#00afbf;
+        }
+    
+</style>
+</head>
+<body>
+
+<h1>Meet The Team</h1>
+<br>
+<div class="body">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Mr.Masood Ansari</h2>
+        <p class="title">Designer</p>
+        <p>Currently persuing degree of Computer Engineering from Mumbai University.</p>
+        <p><button class="button" onclick="myFunction()">Contact</button></p>
+          <p id="masood" style="text-align: center;background-color:#00afbf;color: white;font-size: 24px;"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Mr.Shamshad Iraqui</h2>
+        <p class="title">Designer</p>
+        <p>Currently persuing degree of Computer Engineering from Mumbai University.</p>
+        <p><button class="button" onclick="myFunction1()">Contact</button></p>
+        <p id="shamshad" style="text-align: center;background-color:#00afbf;color: white;font-size: 24px;"></p>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Mr.Kashyap Godambe</h2>
+        <p class="title">Designer</p>
+        <p>Currently persuing degree of Computer Engineering from Mumbai University.</p>
+        <p><button class="button" onclick="myFunction2()">Contact</button></p>
+        <p id="kashyap" style="text-align: center;background-color:#00afbf;color: white;font-size: 24px;"></p>
+ 
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+    <script>
+     function myFunction(){
+        document.getElementById("masood").innerHTML = "Email:ansarimasood85@gmail.com<br>Mob:9930797445";
+         document.getElementById("shamshad").innerHTML = "";
+         document.getElementById("kashyap").innerHTML = "";
+         
+    }
+        function myFunction1(){
+        document.getElementById("masood").innerHTML = "";
+                 document.getElementById("shamshad").innerHTML = "Email:shamshad1840@gmail.com<br>Mob:9594753132";
+         document.getElementById("kashyap").innerHTML = "";
+    }
+        function myFunction2(){
+        document.getElementById("masood").innerHTML = "";
+         document.getElementById("shamshad").innerHTML = "";
+            document.getElementById("kashyap").innerHTML = "Email:kashgodambe@gmail.com<br>Mob:9967174793";
+    }
+    </script>
+</html>
+ 
